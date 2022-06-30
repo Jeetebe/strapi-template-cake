@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ten": {
+      "type": "string"
+    },
+    "maso": {
+      "type": "string"
+    },
+    "mota": {
+      "type": "richtext"
+    },
+    "gia": {
+      "type": "integer"
+    },
+    "hinhanh": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::categorie.categorie",
+      "mappedBy": "products"
+    },
+    "topcat": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::topcat.topcat",
+      "inversedBy": "products"
+    },
+    "giauudai": {
+      "type": "integer"
+    },
+    "chitiet": {
+      "type": "richtext"
+    }
+  }
+}

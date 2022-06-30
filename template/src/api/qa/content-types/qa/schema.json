@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qas",
+  "info": {
+    "singularName": "qa",
+    "pluralName": "qas",
+    "displayName": "Qa",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cauhoi": {
+      "type": "string"
+    },
+    "traloi": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "singularName": "setting",
+    "pluralName": "settings",
+    "displayName": "Setting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ten": {
+      "type": "string"
+    },
+    "Diachi": {
+      "type": "string"
+    },
+    "Dienthoai": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Zalo": {
+      "type": "string"
+    },
+    "FacebookId": {
+      "type": "string"
+    },
+    "Map": {
+      "type": "string"
+    }
+  }
+}
